@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="loginform.css">
+</head>
+<body>
+
+  <section id="main">
+    
+    <form class="form" id="form" onchange="good()">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email" onchange="checkemail()">
+        <p class="wrong" id="message1">Make sure email is more than 3 characters and has @ and a .</p>
+        
+
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password" placeholder="Password" onchange="checkpass()">
+        <p class="wrong" id="message2">Make sure password is more than 8 characters.</p>
+        
+        <p id="right"></p>
+        <button type="submit" onclick="confirmfirst()">Submit</button>
+    </form>
+</section>
+  
+
+    <script src="loginform.js"></script>
+
+</body>
+</html>
